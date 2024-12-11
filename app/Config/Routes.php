@@ -7,7 +7,7 @@ use CodeIgniter\Router\RouteCollection;
 $routes = Services::routes();
 
 // Documentation Route
-$routes->get('docs', 'DocsController::index');
+$routes->get('/', 'DocsController::index');
 
 // Public Auth Routes
 $routes->group('api', function($routes) {
