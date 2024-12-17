@@ -8,18 +8,21 @@ use App\Filters\AuthFilter;
 class Filters extends BaseConfig
 {
     public $aliases = [
-        'auth' => AuthFilter::class
+        'auth' => AuthFilter::class,
     ];
 
     public $globals = [
-        'before' => [
-            'auth' => ['except' => ['api/login', 'api/register']]
-        ],
-        'after' => [
-            // 'toolbar',
-        ]
+        // 'before' => [
+        //     'honeypot',
+        //     'csrf',
+        // ],
+        // 'after' => [
+        //     'toolbar',
+        //     'honeypot',
+        // ],
     ];
 
     public $methods = [];
+
     public $filters = [];
 }
